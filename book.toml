@@ -1,0 +1,9 @@
+[book]
+title = "Darkmoon Wiki"
+authors = ["Sean Kilgore"]
+language = "en"
+
+[output.html]
+default-theme = "darkmoon"
+preferred-dark-theme = "darkmoon"
+additional-css = ["theme/variables.css", "theme/general.css"]

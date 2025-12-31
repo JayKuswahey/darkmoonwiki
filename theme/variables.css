@@ -1,0 +1,66 @@
+/* Darkmoon theme variables (applied when html has class 'darkmoon') */
+.darkmoon {
+    /* Core palette sourced from darkmoon3d.com */
+    --bg: #31363f;
+    --fg: #e8ecf2;
+
+    --sidebar-bg: #2a2f38;
+    --sidebar-fg: #e8ecf2;
+    --sidebar-non-existant: #8c939f;
+    --sidebar-active: #fba7a7;
+    --sidebar-spacer: #3a404d;
+
+    --scrollbar: #5f6774;
+
+    --icons: #b5bdc9;
+    --icons-hover: #ffffff;
+
+    --links: #75b4e3;
+
+    --inline-code-color: #fba7a7;
+
+    --theme-popup-bg: #2a2f38;
+    --theme-popup-border: #3a404d;
+    --theme-hover: #353b47;
+
+    --quote-bg: #252a33;
+    --quote-border: #3a404d;
+
+    --warning-border: #fba7a7;
+
+    --table-border-color: #3d4450;
+    --table-header-bg: #353b47;
+    --table-alternate-bg: #2f3440;
+
+    --searchbar-border-color: #4c5562;
+    --searchbar-bg: #2f3540;
+    --searchbar-fg: #e8ecf2;
+    --searchbar-shadow-color: rgba(117, 180, 227, 0.35);
+    --searchresults-header-fg: #aab3c1;
+    --searchresults-border-color: #3d4450;
+    --searchresults-li-bg: #2f3440;
+    --search-mark-bg: rgba(117, 180, 227, 0.35);
+
+    --color-scheme: dark;
+
+    --copy-button-filter: invert(86%) sepia(7%) saturate(280%) hue-rotate(176deg) brightness(101%) contrast(91%);
+    --copy-button-filter-hover: invert(95%) sepia(7%) saturate(303%) hue-rotate(185deg) brightness(108%) contrast(95%);
+
+    --footnote-highlight: #75b4e3;
+
+    --overlay-bg: rgba(30, 34, 39, 0.6);
+
+    --blockquote-note-color: #75b4e3;
+    --blockquote-tip-color: #4cb07a;
+    --blockquote-important-color: #a2c7ff;
+    --blockquote-warning-color: #fba7a7;
+    --blockquote-caution-color: #ff6b6b;
+
+    --sidebar-header-border-color: #fba7a7;
+
+    --code-bg: #1f232b;
+    --code-fg: #e8ecf2;
+    --code-border: #3a404d;
+    --inline-code-bg: #1f232b;
+}
+

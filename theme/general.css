@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap");
+
+/* Palette tokens for other selectors in this file */
+:root {
+    --dm-background: #31363f;
+    --dm-surface: #2a2f38;
+    --dm-surface-strong: #353b47;
+    --dm-border: #3a404d;
+    --dm-accent: #437798;
+    --dm-accent-soft: #75b4e3;
+    --dm-punch: #fba7a7;
+    --dm-text: #e8ecf2;
+    --dm-text-muted: #c8ced8;
+    --dm-code-bg: #1f232b;
+}
+
+/* Apply base look only when the darkmoon theme is active */
+html.darkmoon,
+html.darkmoon body {
+    background: var(--dm-background);
+    color: var(--dm-text);
+    font-family: "Barlow", "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html.darkmoon h1,
+html.darkmoon h2,
+html.darkmoon h3,
+html.darkmoon h4,
+html.darkmoon h5,
+html.darkmoon h6 {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+html.darkmoon a {
+    color: var(--dm-accent-soft);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(117, 180, 227, 0.4);
+}
+
+html.darkmoon a:hover {
+    color: #ffffff;
+    border-bottom-color: var(--dm-punch);
+}
+
+html.darkmoon .menu-bar,
+html.darkmoon .menu-title {
+    background: var(--dm-surface);
+    border-bottom: 1px solid var(--dm-border);
+    color: var(--dm-text);
+}
+
+html.darkmoon .sidebar {
+    background: var(--dm-surface);
+    color: var(--dm-text);
+}
+
+html.darkmoon .sidebar .chapter li a,
+html.darkmoon .sidebar .section li a {
+    color: var(--dm-text-muted);
+}
+
+html.darkmoon .sidebar .chapter li a:hover,
+html.darkmoon .sidebar .section li a:hover,
+html.darkmoon .sidebar .chapter li a.active {
+    color: #ffffff;
+    background: var(--dm-surface-strong);
+    border-left: 3px solid var(--dm-punch);
+}
+
+html.darkmoon .content {
+    background: var(--dm-background);
+    color: var(--dm-text);
+}
+
+html.darkmoon code,
+html.darkmoon pre {
+    background: var(--dm-code-bg);
+    color: var(--dm-text);
+    border: 1px solid var(--dm-border);
+}
+
+html.darkmoon pre {
+    border-radius: 8px;
+    padding: 12px 14px;
+}
+
+html.darkmoon code {
+    border-radius: 5px;
+    padding: 0.1em 0.35em;
+}
+
+html.darkmoon .chapter li::before {
+    color: var(--dm-punch);
+}
+
+html.darkmoon .menu-bar .icon-button,
+html.darkmoon .menu-bar .menu-button {
+    color: var(--dm-text);
+}
+
+html.darkmoon .menu-bar .icon-button:hover,
+html.darkmoon .menu-bar .menu-button:hover {
+    color: #ffffff;
+    background: var(--dm-surface-strong);
+}
+
+html.darkmoon .searchbar {
+    background: var(--dm-surface-strong);
+    border-color: var(--dm-border);
+    color: var(--dm-text);
+}
+
+html.darkmoon .searchbar:focus-within {
+    box-shadow: 0 0 0 2px rgba(117, 180, 227, 0.35);
+}
+
+html.darkmoon .numbered::before {
+    color: var(--dm-accent-soft);
+}
+
+html.darkmoon .button,
+html.darkmoon .expand-toggle,
+html.darkmoon .mobile-nav-toggle {
+    background: var(--dm-accent);
+    color: #ffffff;
+    border: 1px solid var(--dm-border);
+}
+
+html.darkmoon .button:hover,
+html.darkmoon .expand-toggle:hover,
+html.darkmoon .mobile-nav-toggle:hover {
+    background: var(--dm-punch);
+    color: #1a1a1a;
+}
+
+html.darkmoon table {
+    border-color: var(--dm-border);
+}
+
+html.darkmoon thead {
+    background: var(--dm-surface-strong);
+}
+
+html.darkmoon tbody tr:nth-child(odd) {
+    background: var(--dm-surface);
+}
+
+html.darkmoon blockquote {
+    border-left: 4px solid var(--dm-punch);
+    background: rgba(58, 64, 77, 0.4);
+    color: var(--dm-text);
+}
+
