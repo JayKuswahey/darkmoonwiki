@@ -6,7 +6,7 @@ It uses [mdBook](https://github.com/rust-lang/mdBook) to build the book. Docs fo
 
 TODO:
 
-- [ ] GitHub Actions for pages deployment
+- [x] GitHub Actions for pages deployment
 - [ ] Deploy to custom domain for Darkmoon branding (wiki.darkmoon3d.com? darkmoon.wiki?)
 - [ ] Add more content
   - [ ] Migrate print profiles
