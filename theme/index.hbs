@@ -136,6 +136,69 @@
             </div>
         </nav>
 
+        <script>
+            (function() {
+                const linkId = 'sidebar-discord-link';
+                const linkHref = 'https://discord.dm3d.co/';
+                const linkText = 'Join the Discord!';
+                let observer = null;
+
+                function appendLink() {
+                    const scrollbox = document.querySelector('#mdbook-sidebar .sidebar-scrollbox');
+                    if (!scrollbox) return false;
+
+                    const list = scrollbox.querySelector('ul.chapter, ol.chapter');
+                    if (!list) return false;
+
+                    if (document.getElementById(linkId)) return true;
+
+                    const item = document.createElement('li');
+                    item.id = linkId;
+                    item.className = 'chapter-item';
+
+                    const anchor = document.createElement('a');
+                    anchor.href = linkHref;
+                    anchor.target = '_blank';
+                    anchor.rel = 'noopener noreferrer';
+                    anchor.textContent = linkText;
+
+                    item.appendChild(anchor);
+                    list.appendChild(item);
+
+                    if (observer) {
+                        observer.disconnect();
+                        observer = null;
+                    }
+                    return true;
+                }
+
+                function observeSidebar() {
+                    const scrollbox = document.querySelector('#mdbook-sidebar .sidebar-scrollbox');
+                    if (!scrollbox || observer) return;
+
+                    observer = new MutationObserver(function() {
+                        appendLink();
+                    });
+                    observer.observe(scrollbox, { childList: true, subtree: true });
+                }
+
+                function init() {
+                    if (!appendLink()) {
+                        observeSidebar();
+                    }
+                }
+
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', init);
+                } else {
+                    init();
+                }
+
+                // Fallback in case toc renders after DOMContentLoaded
+                setTimeout(init, 300);
+            })();
+        </script>
+
         <div id="mdbook-page-wrapper" class="page-wrapper">
 
             <div class="page">
