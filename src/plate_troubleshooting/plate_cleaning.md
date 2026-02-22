@@ -36,4 +36,4 @@ This is an extreme example of what happens when you wipe with IPA instead of cle
 
 Here's how JayKay handles his plates in the tub. Please note that he's also doing it wrong, he's wiping, not dabbing... `*sigh*` :P
 
-[![Cleaning your build plates](http://img.youtube.com/vi/eX698eowtj0/0.jpg)](http://www.youtube.com/watch?v=eX698eowtj0 "Cleaning your build plates"){:target="_blank" rel="noopener"}
+[![Cleaning your build plates](http://img.youtube.com/vi/eX698eowtj0/0.jpg)](http://www.youtube.com/watch?v=eX698eowtj0 "Cleaning your build plates")
